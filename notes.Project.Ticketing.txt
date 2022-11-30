@@ -1,0 +1,14 @@
+*** SERVICES ***
+> auth  -> everything related to user singup/singin/singout
+> tickets   -> ticket creation/editing
+            -> knows whether a ticket can be updates
+> oders -> order creation/editing
+> expiration    -> watches for orfers to be created, cancels them after 15 minutes
+> payments  -> handles credit card payments
+            -> cancels orders if payments fails
+            -> completes if payment succeeds
+
+Commands
+    $ tsc --init
+
+If you get chrome security warnning, click on the browser and type 'thisisunsafe'
